@@ -223,6 +223,7 @@ namespace Xamarin.Forms.Controls.Issues
 		public void Execute()
 		{
 			RunningApp.EnterText("batch", string.Join("", _buttons));
+			RunningApp.DismissKeyboard();
 			RunningApp.Tap(Id.Batch);
 
 			foreach (var result in _result)
